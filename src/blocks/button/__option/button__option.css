@@ -1,0 +1,11 @@
+.button__option {
+    margin: 10px 20px 10px 20px;
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+
+}

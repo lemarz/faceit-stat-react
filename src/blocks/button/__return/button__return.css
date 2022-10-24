@@ -1,0 +1,17 @@
+.button__return {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-size: cover;
+    /*background-image: url("../src/images/close-icon.svg");*/
+    background-color: coral;
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.button__return:hover {
+    opacity: .6;
+}
