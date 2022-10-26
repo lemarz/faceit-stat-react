@@ -9,6 +9,7 @@
 @import url(./blocks/popup/__input-error/popup__input-error.css);
 @import url(./blocks/popup/__submit-button/popup__submit-button.css);
 @import url(./blocks/popup/__submit-button/_disabled/popup__submit-button_disabled.css);
+@import url(./blocks/popup/__result-link/popup__result-link.css);
 
 @import url(./blocks/pick/__container/pick__container.css);
 

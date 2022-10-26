@@ -19,6 +19,13 @@ export default function Pick({onChoice}) {
             />
 
 
+            <OptionButton
+               title={'Найти совместные матчи'}
+               name={'FindCommonMatches'}
+               onClick={clickHandler}
+            />
+
+
          </div>
       </>
 

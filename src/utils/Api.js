@@ -22,6 +22,19 @@ class Api {
          .then(({player_id}) => player_id)
    }
 
+   playerMatches(playerId, offset, limit = 100) {
+      return fetch(`${this._baseUrl}/players/${playerId}/history?game=csgo&offset=${offset}&limit=${limit}`,
+         {headers: this._headers})
+         .then(this._handleResponse)
+         .then(res => res.items)
+
+   }
+
+   playerStatistic(playerId) {
+      return fetch(`${this._baseUrl}/players/${playerId}/stats/csgo`,
+         {headers: this._headers}).then(this._handleResponse);
+   }
+
 }
 
 // * Экземпляр Api

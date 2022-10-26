@@ -24,3 +24,4 @@ yarn-error.log*
 
 TODO
 /src/utils/token.js
+/.idea/

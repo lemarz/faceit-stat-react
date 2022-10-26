@@ -1,0 +1,16 @@
+.popup__result-link {
+    text-decoration: underline;
+    color: #fc8414;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 336px;
+    overflow: hidden;
+}
+
+.popup__result-link:last-of-type {
+    margin-bottom: 20px;
+}

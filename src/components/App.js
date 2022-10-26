@@ -1,6 +1,7 @@
 import React from "react";
-import GetId from "./mode/GetId";
 import Pick from "./Pick";
+import GetId from "./mode/GetId";
+import FindCommonMatches from "./mode/FindCommonMatches"
 
 
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
             {
                'pick': <Pick onChoice={choiceHandler}/>,
 
-               'GetId': <GetId/>
+               'GetId': <GetId/>,
+               'FindCommonMatches': <FindCommonMatches/>
             }[mode]
          }
 
