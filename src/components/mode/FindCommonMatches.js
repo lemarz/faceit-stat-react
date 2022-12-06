@@ -27,10 +27,15 @@ export default function FindCommonMatches() {
       )
    }
 
+   const reformatDate = (unix) => {
+      const dateObject = new Date(unix * 1000)
+      return dateObject.toLocaleString()
+   }
+
    const findCommon = (arr1, arr2) => {
       arr1.forEach(item1 => {
          arr2.forEach(item2 => {
-            item1.match_id === item2.match_id && setCommonMatches(prevState => [...prevState, item1.match_id])
+            item1.match_id === item2.match_id && setCommonMatches(prevState => [...prevState, item1])
          })
       })
 
@@ -169,8 +174,8 @@ export default function FindCommonMatches() {
                   className="popup__result-link"
                   key={item}
                   name={`Матч ${i + 1}`}
-                  href={`https://www.faceit.com/ru/csgo/room/${item}`}
-               >{`Матч ${i + 1}`}</a>
+                  href={`https://www.faceit.com/ru/csgo/room/${item.match_id}`}
+               >{`Матч ${i + 1} - ${reformatDate(item.finished_at)}`}</a>
             })
          }
       >

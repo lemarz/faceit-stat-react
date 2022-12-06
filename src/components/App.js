@@ -2,38 +2,31 @@ import React from "react";
 import Pick from "./Pick";
 import GetId from "./mode/GetId";
 import FindCommonMatches from "./mode/FindCommonMatches"
+import {Route, Routes, useLocation, useNavigate} from "react-router-dom";
 
 
 export default function App() {
 
-   const [mode, setMode] = React.useState('pick')
-
-   const goToPick = () => {
-      setMode('pick')
-   }
-
-   const
-      choiceHandler = (chose) => {
-         setMode(chose)
-      }
+   const location = useLocation()
+   const navigate = useNavigate()
 
    return (
       <div className="popup__container">
 
-         {
-            {
-               'pick': <Pick onChoice={choiceHandler}/>,
+         {location.pathname !== '/' &&
+            <button className="button button__return"
+                    type="button"
+                    onClick={() => navigate('/')}
+            >←</button>}
 
-               'GetId': <GetId/>,
-               'FindCommonMatches': <FindCommonMatches/>
-            }[mode]
-         }
+         <Routes>
+            <Route path='/' element={<Pick/>}/>
+            <Route path='/get-id' element={<GetId/>}/>
+            <Route path='/find-common' element={<FindCommonMatches/>}/>
+         </Routes>
 
-
-         {mode !== 'pick' &&
-            <button className="button button__return" type="button" onClick={goToPick}>←</button>
-         }
       </div>
    )
+
 }
 

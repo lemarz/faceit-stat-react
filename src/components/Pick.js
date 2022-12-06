@@ -1,11 +1,10 @@
 import React from "react";
 import OptionButton from "./OptionButton";
+import {useNavigate} from 'react-router-dom'
 
-export default function Pick({onChoice}) {
+export default function Pick() {
 
-   const clickHandler = (e) => {
-      onChoice(e.target.name)
-   }
+   const navigate = useNavigate()
 
    return (
       <>
@@ -15,16 +14,16 @@ export default function Pick({onChoice}) {
             <OptionButton
                title={'Получить ID игрока'}
                name={'GetId'}
-               onClick={clickHandler}
+               onClick={() => navigate('get-id')}
             />
 
 
             <OptionButton
                title={'Найти совместные матчи'}
                name={'FindCommonMatches'}
-               onClick={clickHandler}
-            />
-
+               onClick={() => navigate('find-common')}
+            >
+            </OptionButton>
 
          </div>
       </>
