@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/faceit-stat-react/static/css/main.b3834c2b.css",
-    "main.js": "/faceit-stat-react/static/js/main.dd1ebca8.js",
+    "main.js": "/faceit-stat-react/static/js/main.86733571.js",
     "index.html": "/faceit-stat-react/index.html",
     "main.b3834c2b.css.map": "/faceit-stat-react/static/css/main.b3834c2b.css.map",
-    "main.dd1ebca8.js.map": "/faceit-stat-react/static/js/main.dd1ebca8.js.map"
+    "main.86733571.js.map": "/faceit-stat-react/static/js/main.86733571.js.map"
   },
   "entrypoints": [
     "static/css/main.b3834c2b.css",
-    "static/js/main.dd1ebca8.js"
+    "static/js/main.86733571.js"
   ]
 }
