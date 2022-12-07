@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/faceit-stat-react/static/css/main.b3834c2b.css",
+    "main.js": "/faceit-stat-react/static/js/main.35edaf80.js",
+    "index.html": "/faceit-stat-react/index.html",
+    "main.b3834c2b.css.map": "/faceit-stat-react/static/css/main.b3834c2b.css.map",
+    "main.35edaf80.js.map": "/faceit-stat-react/static/js/main.35edaf80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3834c2b.css",
+    "static/js/main.35edaf80.js"
+  ]
+}
