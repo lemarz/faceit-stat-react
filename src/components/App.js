@@ -27,6 +27,9 @@ export default function App() {
                <Route path='/' element={<Pick/>}/>
                <Route path='/get-id' element={<GetId/>}/>
                <Route path='/find-common' element={<FindCommonMatches/>}/>
+
+               <Route path='' element={<Pick/>}/>
+
             </Routes>
 
          </div>
