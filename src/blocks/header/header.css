@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-top: 30px;
+    align-items: baseline;
+}

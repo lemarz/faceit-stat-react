@@ -1,5 +1,3 @@
-import token from "./token";
-
 class Api {
 
    constructor(options) {
@@ -41,7 +39,7 @@ class Api {
 const api = new Api({
    baseUrl: 'https://open.faceit.com/data/v4',
    headers: {
-      authorization: `Bearer ${token}`,
+      authorization: `Bearer ${localStorage.getItem('token')}`,
       'Content-Type': 'application/json'
    }
 })

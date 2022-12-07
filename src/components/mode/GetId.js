@@ -8,7 +8,7 @@ export default function GetId() {
 
    const [id, setId] = React.useState('')
    const [error, setError] = React.useState('')
-   const [isButtonValid, setIsButtonValid] = React.useState(true)
+   const [isButtonValid, setIsButtonValid] = React.useState(false)
 
    const setButtonValidity = () => {
       nickNameRef.current.value.length > 2

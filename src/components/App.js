@@ -3,6 +3,7 @@ import Pick from "./Pick";
 import GetId from "./mode/GetId";
 import FindCommonMatches from "./mode/FindCommonMatches"
 import {Route, Routes, useLocation, useNavigate} from "react-router-dom";
+import Header from "./Header";
 
 
 export default function App() {
@@ -11,21 +12,25 @@ export default function App() {
    const navigate = useNavigate()
 
    return (
-      <div className="popup__container">
+      <>
+         <Header/>
 
-         {location.pathname !== '/' &&
-            <button className="button button__return"
-                    type="button"
-                    onClick={() => navigate('/')}
-            >←</button>}
+         <div className="popup__container">
 
-         <Routes>
-            <Route path='/' element={<Pick/>}/>
-            <Route path='/get-id' element={<GetId/>}/>
-            <Route path='/find-common' element={<FindCommonMatches/>}/>
-         </Routes>
+            {location.pathname !== '/' &&
+               <button className="button button__return"
+                       type="button"
+                       onClick={() => navigate('/')}
+               >←</button>}
 
-      </div>
+            <Routes>
+               <Route path='/' element={<Pick/>}/>
+               <Route path='/get-id' element={<GetId/>}/>
+               <Route path='/find-common' element={<FindCommonMatches/>}/>
+            </Routes>
+
+         </div>
+      </>
    )
 
 }
